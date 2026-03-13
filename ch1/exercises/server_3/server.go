@@ -40,6 +40,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 func counterHandler(w http.ResponseWriter, r *http.Request) {
 
 	mu.Lock()
-	fmt.Fprintf(w, "\n Count : %d \n", r.Header, count)
+	fmt.Fprintf(w, "\n Count : %d \n", count)
 	mu.Unlock()
 }
